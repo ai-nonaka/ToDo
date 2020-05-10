@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ToDoリスト</title>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="./doc/ToDoStyle.css"> -->
+    <!--link rel="javascript" href="./doc/ToDoAction.js"-->
+    <!-- <script type="text/javascript"　src="/Users/nonakaai/github/ToDoList/src/WEB-INF/doc/TodoAction.js"></script> -->
+  </head>
+  <body>
+    <br>
+    <h2>TODOリスト</h2>
+    <br>
+    <!-- テーブルエリア（ToDo一覧部） -->
+    <div class="spreadBody" id="div1" style="width:680px;">
+      <table id="Table" width="100%;" border="1" cellspacing="0" cellpadding="5" bordercolor="#333333">
+        <thead>
+          <tr>
+            <!-- ヘッダープロパティエリア -->
+            <th style="width : 20%;">日付</th>
+            <th style="width : 40%;">内容</th>
+            <th style="width : 20%;">優先度</th>
+            <th style="width : 20%;">状態</th>
+          </tr>
+        </thead>
+      <tbody>
+        <tr>
+          <!-- ボディーエリア -->
+              <!-- <td></td>
+              <td></td>
+              <td></td>
+              <td></td> -->
+        </tr>
+      </tbody>
+      </table>
+    </div>
+    <!-- ボタンエリア -->
+    <div id="div2">
+      <input type="button" id="UpdateList" name="UpdateButton" value="並び替え" onclick="" />
+    </div>
+
+
+<form id="formTest" class="" action="ToDo.html" method="post">
+    <!-- 登録エリア -->
+    <div class="spreadBody" id="div3" style="width:680px;">
+      <table id="add" width="100%;" border="1" cellspacing="0" cellpadding="5" bordercolor="#333333">
+        <thead>
+          <tr>
+            <th style="width : 20%;">日付</th>
+            <th style="width : 40%;">内容</th>
+            <th style="width : 20%;">優先度</th>
+            <th style="width : 20%;">状態</th>
+          </tr>
+        </thead>
+      <tbody>
+        <tr>
+          <td><input id="input1" type="text" name="date" value="" /></td>
+          <td><input id="input2" type="text" name="body" value="" /></td>
+          <td><input id="input3" type="text" name="priority" value="" /></td>
+          <td><input id="input4" type="text" name="status" value="" /></td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+    <!-- ボタンエリア -->
+    <div id="div4">
+      <input type="button" id="AddList" name="AddButton" value="追加" onclick="colAdd();" />
+    </div>
+</form>
+
+
+<!-- 外部ファイル読み込み -->
+<script src="/Users/nonakaai/github/ToDoList/src/WEB-INF/doc/TodoAction.js">
+  colAdd();
+</script>
+
+  </body>
+</html>
